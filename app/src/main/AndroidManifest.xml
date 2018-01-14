@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.android.todolist">
+    package="com.example.android.menurandomizer">
 
     <application
         android:allowBackup="false"
@@ -12,7 +12,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <!-- The manifest entry for the MainActivity -->
-        <activity android:name="com.example.android.todolist.MainActivity">
+        <activity android:name="com.example.android.menurandomizer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,15 +22,15 @@
 
         <!-- AddTaskActivity -->
         <activity
-            android:name="com.example.android.todolist.AddDishActivity"
+            android:name="com.example.android.menurandomizer.AddDishActivity"
             android:label="@string/add_task_activity_name" />
 
         <!-- Register the HomeMenuContentProvider -->
         <!-- Set name, authorities, and exported attributes -->
         <!-- exported = false limits access to this ContentProvider to only this app -->
         <provider
-            android:name="com.example.android.todolist.data.HomeMenuContentProvider"
-            android:authorities="com.example.android.todolist"
+            android:name="com.example.android.menurandomizer.data.HomeMenuContentProvider"
+            android:authorities="com.example.android.menurandomizer"
             android:exported="false"/>
 
     </application>
