@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">What to cook?</string>
+    <string name="main_activity_name">All Dishes</string>
+    <string name="add_task_activity_name">Add a New Dish</string>
+
+    <!-- Strings for MainActivity -->
+    <string name="random_input">Click the button to get your meal</string>
+    <string name="random_btn">Get your meal</string>
+    <string name="random_btn_2">Try again</string>
+    <string name="header_mainDish"><b>Main Dishes</b></string>
+    <string name="header_soup"><b>Soups</b></string>
+    <string name="header_salad"><b>Salads</b></string>
+    <string name="header_garnish"><b>Garnish</b></string>
+
+    <!-- Strings for AddTaskActivity -->
+    <!-- This edit task has a unicode character for "..." = "&#8230;" -->
+    <string name="edit_task_description">Enter a dish&#8230;</string>
+    <string name="dish_type">Dish type</string>
+
+    <string name="main_dish">Main Dish</string>
+    <string name="garnish">Garnish</string>
+    <string name="soup">Soup</string>
+    <string name="salad">Salad</string>
+
+    <string name="add_button">Add</string>
+
+</resources>

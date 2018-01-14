@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This layout defines the main activity screen and displays a list of tasks (if they exist),
+    and a floating action button that launches another activity.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView that is responsible for holding a list of task data -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/randomize_output"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/random_input" />
+
+        <Button
+            android:id="@+id/randomize_btn"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/mybuttons"
+            android:text="@string/random_btn"
+            android:textColor="@android:color/primary_text_dark" />
+
+        <TextView
+            android:id="@+id/header_main_dishes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="@string/header_mainDish"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewMainDishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/header_soup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="@string/header_soup"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSoup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/header_garnish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="@string/header_garnish"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewGarnish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/header_salad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="@string/header_salad"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSalad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewDishes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <!-- Floating action button that launches AddTaskActivity when clicked -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addDishBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/addDishBtn_margin"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</FrameLayout>
+
